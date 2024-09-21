@@ -18,5 +18,14 @@
   <div *ngIf="finished" class="quizz_results">
     <h1>O seu resultado é: </h1>
     <p>{{ answerSelected }}</p>
+
+    <div (click)="refresh()" class="refresh">
+      <mat-icon 
+        aria-hidden="false" 
+        aria-label="Example home icon" 
+        fontIcon="refresh"
+      ></mat-icon>
+      <p>Reiniciar</p>
+    </div>
   </div>
 </div>
